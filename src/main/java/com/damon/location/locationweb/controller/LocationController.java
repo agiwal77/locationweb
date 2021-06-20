@@ -17,6 +17,11 @@ public class LocationController {
     @Autowired
     private LocationService service;
 
+    @RequestMapping("/index")
+    public String showIndex(){
+        return "index";
+    }
+
     @RequestMapping("/create")
     public String create(){
         return "createLocation";
